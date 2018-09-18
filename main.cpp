@@ -72,10 +72,9 @@ int main() {
   else {
     std::cout << "Labirint was not generated" << std::endl;
   }
-  
-  
   std::cout << std::endl;
-  
+  // Инициализация рандома.
+  srand(std::time(0));
   // Прохождение лабиринта
   int find = labirint.findWay();
   labirint.setBothPoint(first, end);
